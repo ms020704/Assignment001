@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="/"> Home </a></li>
+          <li><a href="/about.html"> About </a></li>
+          <li><a href="/contact.html"> Contact </a></li>
+          <li><a href="/team.html"> Team </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <style>
+      main {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 30px;
+        background-color: #f5f5f5;
+      }
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      img {
+        width: 300px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      audio,
+      video {
+        width: 80%;
+        max-width: 600px;
+        margin-top: 20px;
+      }
+    </style>
+
+    <main>
+      <!-- 이미지 섹션 -->
+      <h1>📷🎵🎬 이미지, 오디오, 비디오 활용 페이지</h1>
+      <section>
+        <h2>📸 이미지</h2>
+        <img src="image.png" alt="예시 이미지" />
+        <p>위 이미지는 예시 사진입니다.</p>
+      </section>
+
+      <!-- 오디오 섹션 -->
+      <section>
+        <h2>🎧 오디오</h2>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg" />
+          <!-- 브라우저가 오디오를 지원하지 않습니다. -->
+        </audio>
+        <p>음악을 감상해보세요.</p>
+      </section>
+
+      <!-- 비디오 섹션 -->
+      <section>
+        <h2>🎥 비디오</h2>
+        <video controls>
+          <source src="video.mp4" type="video/mp4" />
+          <!-- 브라우저가 비디오를 지원하지 않습니다. -->
+        </video>
+        <p>짧은 영상을 확인해보세요.</p>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>영수증</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,6 +18,102 @@
         </ul>
       </div>
     </nav>
+
+    <style>
+      main {
+        background: #eee;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 40px;
+      }
+
+      .receipt {
+        width: 360px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border: 1px dashed #aaa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .receipt h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      .receipt p {
+        margin: 4px 0;
+        font-size: 14px;
+      }
+
+      .receipt table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      .receipt th,
+      .receipt td {
+        border-bottom: 1px dotted #aaa;
+        padding: 5px 0;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .receipt tfoot td {
+        font-weight: bold;
+        font-size: 15px;
+        border-top: 1px dashed #000;
+      }
+
+      .center {
+        text-align: center;
+      }
+    </style>
+
+    <main>
+      <div class="receipt">
+        <h2>💳 영수증 Receipt</h2>
+
+        <p>매장명: GX 편의점</p>
+        <p>주소: 서울특별시 강남구 봉은사로 123</p>
+        <p>주문일시: 2025-04-05 14:30</p>
+        <p>영수증 번호: #000123456</p>
+        <hr />
+
+        <table>
+          <thead>
+            <tr>
+              <th>상품명</th>
+              <th class="center">수량</th>
+              <th class="center">금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>삼각김밥</td>
+              <td class="center">2</td>
+              <td class="center">2,000</td>
+            </tr>
+            <tr>
+              <td>콜라 500ml</td>
+              <td class="center">1</td>
+              <td class="center">1,500</td>
+            </tr>
+            <tr>
+              <td>초코바</td>
+              <td class="center">3</td>
+              <td class="center">3,600</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">총 합계</td>
+              <td class="center">7,100원</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
 
     <script src="main.js"></script>
   </body>

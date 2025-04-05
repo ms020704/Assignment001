@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>메뉴판 주문</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,6 +18,108 @@
         </ul>
       </div>
     </nav>
+    <style>
+      main {
+        font-family: Arial, sans-serif;
+        background-color: #fdfdfd;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .menu-container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .menu-item label {
+        font-size: 18px;
+      }
+
+      .menu-item input {
+        width: 60px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 12px;
+        background-color: #27ae60;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #219150;
+      }
+    </style>
+    <main>
+      <div class="menu-container">
+        <h1>🍽️ 오늘의 메뉴</h1>
+
+        <form action="/order" method="POST">
+          <div class="menu-item">
+            <label for="bibimbap">비빔밥 (₩8,000)</label>
+            <input
+              type="number"
+              name="bibimbap"
+              id="bibimbap"
+              min="0"
+              value="0"
+            />
+          </div>
+
+          <div class="menu-item">
+            <label for="kimbap">김밥 (₩3,000)</label>
+            <input type="number" name="kimbap" id="kimbap" min="0" value="0" />
+          </div>
+
+          <div class="menu-item">
+            <label for="ramen">라면 (₩4,500)</label>
+            <input type="number" name="ramen" id="ramen" min="0" value="0" />
+          </div>
+
+          <div class="menu-item">
+            <label for="tteokbokki">떡볶이 (₩5,000)</label>
+            <input
+              type="number"
+              name="tteokbokki"
+              id="tteokbokki"
+              min="0"
+              value="0"
+            />
+          </div>
+
+          <div class="menu-item">
+            <label for="cola">콜라 (₩1,500)</label>
+            <input type="number" name="cola" id="cola" min="0" value="0" />
+          </div>
+
+          <button type="submit">주문하기</button>
+        </form>
+      </div>
+    </main>
 
     <script src="main.js"></script>
   </body>

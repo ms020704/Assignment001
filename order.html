@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문 내역서</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li><a href="/"> Home </a></li>
+          <li><a href="/about.html"> About </a></li>
+          <li><a href="/contact.html"> Contact </a></li>
+          <li><a href="/team.html"> Team </a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <style>
+      main {
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: #f4f4f4;
+        padding: 40px;
+      }
+
+      .order-container {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .info {
+        margin-bottom: 20px;
+      }
+
+      .info p {
+        margin: 5px 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      tfoot td {
+        font-weight: bold;
+        background-color: #f2f2f2;
+      }
+    </style>
+
+    <main>
+      <div class="order-container">
+        <h1>🧾 주문 내역서</h1>
+
+        <div class="info">
+          <p><strong>주문자명:</strong> 김민석</p>
+          <p><strong>주문번호:</strong> 20250405-001</p>
+          <p><strong>주문일자:</strong> 2025-04-05</p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>상품명</th>
+              <th>수량</th>
+              <th>단가 (원)</th>
+              <th>합계 (원)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>무선 마우스</td>
+              <td>2</td>
+              <td>15,000</td>
+              <td>30,000</td>
+            </tr>
+            <tr>
+              <td>기계식 키보드</td>
+              <td>1</td>
+              <td>45,000</td>
+              <td>45,000</td>
+            </tr>
+            <tr>
+              <td>USB C 케이블</td>
+              <td>3</td>
+              <td>5,000</td>
+              <td>15,000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">총 합계</td>
+              <td>90,000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
